@@ -43,3 +43,11 @@ The following packages were updated:
   com.unity.timeline from version 1.6.3 to 1.7.5
   com.unity.visualscripting from version 1.7.6 to 1.9.0
   com.unity.xr.management from version 4.2.0 to 4.4.0
+
+=== Tue Oct  3 17:06:49 2023
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.ugui@1.0.0
