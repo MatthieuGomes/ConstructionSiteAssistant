@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Android;
+using Unity.VisualScripting;
 
 public class GPSCoordinatesAcquireScript : MonoBehaviour
 {
