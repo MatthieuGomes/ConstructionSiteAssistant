@@ -11,9 +11,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/ExampleAssets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMobileScene.unity
     guid: 3c4499c032cebbb4f91be0560be1ec91
+  - enabled: 1
+    path: Assets/Scenes/BlankAR.unity
+    guid: 6bdce89659816455b9f906fc62d19910
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bc860bef12f59934789a6fb5beb369de,
       type: 2}
