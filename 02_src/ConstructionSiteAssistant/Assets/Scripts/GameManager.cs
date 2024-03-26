@@ -34,11 +34,25 @@ public class GameManager : MonoBehaviour
         
     }
 
+    // Retrieves all the children of a GameObject
+    public GameObject[] GetAllChildren(GameObject obj)
+    {
+        GameObject[] children;
+        children = new GameObject[obj.transform.childCount];
+
+        for (int i = 0; i < obj.transform.childCount; i++)
+        { 
+            children[i] = obj.transform.GetChild(i).gameObject;
+        }
+
+        return children;
+    }
+
     // Recursive call to set up all selected child GameObjects at Startup
-    private void RecursiveChildrenStartMethod(GameObject Obj)
+    private void RecursiveChildrenStartMethod(GameObject obj)
     {
         // We retrieve all childen in current child
-        foreach (GameObject child in Obj.GetComponentsInChildren<GameObject>())
+        foreach (GameObject child in GetAllChildren(obj))
         {
             // Operation to execute on children
             MakeRayInteractable(child);
@@ -53,8 +67,10 @@ public class GameManager : MonoBehaviour
     {
         if (obj.GetComponent<MeshRenderer>() != null)
         {
+            MeshFilter meshFilter = obj.GetComponent<MeshFilter>();
+            Mesh meshToCollide = meshFilter.mesh;
+
             // We add the necessary components to turn our game object interactable
-            Mesh meshToCollide = obj.GetComponent<MeshRenderer>().GetComponent<Mesh>();
             MeshCollider meshCollider = obj.AddComponent<MeshCollider>();
             ColliderSurface colliderSurface = obj.AddComponent<ColliderSurface>();
             RayInteractable rayInteractable = obj.AddComponent<RayInteractable>();
