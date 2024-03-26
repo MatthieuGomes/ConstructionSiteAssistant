@@ -1,3 +1,8 @@
+/*
+ * Author: Oliver Belliard Abreu
+ * Project: ENSEA 2d year project "Construction Site Assistant"
+ */
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -34,30 +39,16 @@ public class GameManager : MonoBehaviour
         
     }
 
-    // Retrieves all the children of a GameObject
-    public GameObject[] GetAllChildren(GameObject obj)
-    {
-        GameObject[] children;
-        children = new GameObject[obj.transform.childCount];
-
-        for (int i = 0; i < obj.transform.childCount; i++)
-        { 
-            children[i] = obj.transform.GetChild(i).gameObject;
-        }
-
-        return children;
-    }
-
     // Recursive call to set up all selected child GameObjects at Startup
     private void RecursiveChildrenStartMethod(GameObject obj)
     {
         // We retrieve all childen in current child
         foreach (GameObject child in GetAllChildren(obj))
         {
-            // Operation to execute on children
+            // Operations to execute on children
             MakeRayInteractable(child);
 
-            // Recursive call for each child child
+            // Recursive call for each child of child
             RecursiveChildrenStartMethod(child);
         }
     }
@@ -80,6 +71,20 @@ public class GameManager : MonoBehaviour
             colliderSurface.InjectCollider(meshCollider);
             rayInteractable.InjectSurface(colliderSurface);
         }
+    }
+
+    // Retrieves all the children of a GameObject
+    public GameObject[] GetAllChildren(GameObject obj)
+    {
+        GameObject[] children;
+        children = new GameObject[obj.transform.childCount];
+
+        for (int i = 0; i < obj.transform.childCount; i++)
+        {
+            children[i] = obj.transform.GetChild(i).gameObject;
+        }
+
+        return children;
     }
 }
 
