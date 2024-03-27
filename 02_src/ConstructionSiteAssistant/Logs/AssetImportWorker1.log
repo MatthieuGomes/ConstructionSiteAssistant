@@ -15,7 +15,7 @@ C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-51365
+54350
 Successfully changed project path to: C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
 C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,13 +49,13 @@ C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [31624] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 2402199270 [EditorId] 2402199270 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [37832] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 3665590765 [EditorId] 3665590765 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [31624] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 2402199270 [EditorId] 2402199270 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [37832] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 3665590765 [EditorId] 3665590765 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 323.20 ms, found 7 plugins.
-Preloading 1 native plugins for Editor in 4.75 ms.
+Refreshing native plugins compatible for Editor in 17.23 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 0.75 ms.
 Initialize engine version: 2022.3.18f1 (d29bea25151d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant/Assets
@@ -72,61 +72,47 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56728
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010977 seconds.
-- Loaded All Assemblies, in  0.539 seconds
+Registered in 0.012789 seconds.
+- Loaded All Assemblies, in  0.688 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
-C:\Users\olire\AppData\Roaming\SideQuest\scrcpy-win64-v2.0\adb.exe
-Reconnecting Device: 
-2G0YC1ZF9Q0349        
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:Log (object)
-UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
-UnityEditor.Android.TargetScanWorker:ScanSync ()
-UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
-UnityEditor.Android.TargetExtension:OnLoad ()
-UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
-
-Android Extension - Scanning For ADB Devices 3312 ms
+Android Extension - Scanning For ADB Devices 383 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  3.696 seconds
-Domain Reload Profiling: 4232ms
-	BeginReloadAssembly (210ms)
+- Finished resetting the current domain, in  0.812 seconds
+Domain Reload Profiling: 1497ms
+	BeginReloadAssembly (283ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (50ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (84ms)
-	LoadAllAssembliesAndSetupDomain (179ms)
-		LoadAssemblies (201ms)
+	RebuildCommonClasses (60ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (105ms)
+	LoadAllAssembliesAndSetupDomain (221ms)
+		LoadAssemblies (283ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (176ms)
-			TypeCache.Refresh (173ms)
-				TypeCache.ScanAssembly (157ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (214ms)
+			TypeCache.Refresh (212ms)
+				TypeCache.ScanAssembly (195ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (3696ms)
+	FinalizeReload (812ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3631ms)
+		SetupLoadedEditorAssemblies (740ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3453ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (548ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (123ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			ProcessInitializeOnLoadAttributes (136ms)
+			ProcessInitializeOnLoadMethodAttributes (49ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -135,8 +121,8 @@ Domain Reload Profiling: 4232ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  3.439 seconds
-Refreshing native plugins compatible for Editor in 16.25 ms, found 7 plugins.
+- Loaded All Assemblies, in  1.056 seconds
+Refreshing native plugins compatible for Editor in 10.96 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -171,49 +157,49 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  1.690 seconds
-Domain Reload Profiling: 5122ms
-	BeginReloadAssembly (249ms)
+- Finished resetting the current domain, in  1.228 seconds
+Domain Reload Profiling: 2278ms
+	BeginReloadAssembly (205ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (11ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (32ms)
-	RebuildCommonClasses (61ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (72ms)
-	LoadAllAssembliesAndSetupDomain (3032ms)
-		LoadAssemblies (2688ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (714ms)
+		LoadAssemblies (502ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (502ms)
-			TypeCache.Refresh (444ms)
-				TypeCache.ScanAssembly (352ms)
-			ScanForSourceGeneratedMonoScriptInfo (36ms)
-			ResolveRequiredComponents (19ms)
-	FinalizeReload (1690ms)
+		AnalyzeDomain (321ms)
+			TypeCache.Refresh (281ms)
+				TypeCache.ScanAssembly (250ms)
+			ScanForSourceGeneratedMonoScriptInfo (27ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1229ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1309ms)
+		SetupLoadedEditorAssemblies (954ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (49ms)
-			SetLoadedEditorAssemblies (7ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (147ms)
-			ProcessInitializeOnLoadAttributes (1043ms)
-			ProcessInitializeOnLoadMethodAttributes (52ms)
-			AfterProcessingInitializeOnLoad (10ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (777ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (11ms)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
-Refreshing native plugins compatible for Editor in 47.26 ms, found 7 plugins.
-Preloading 1 native plugins for Editor in 1.11 ms.
-Unloading 4170 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (63.2 KB). Loaded Objects now: 4628.
-Memory consumption went from 169.2 MB to 169.1 MB.
-Total: 8.463300 ms (FindLiveObjects: 0.428600 ms CreateObjectMapping: 0.202600 ms MarkObjects: 7.608700 ms  DeleteObjects: 0.221400 ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 10.68 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 1.24 ms.
+Unloading 4171 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (63.3 KB). Loaded Objects now: 4630.
+Memory consumption went from 169.3 MB to 169.2 MB.
+Total: 5.678700 ms (FindLiveObjects: 0.495500 ms CreateObjectMapping: 0.229000 ms MarkObjects: 4.691000 ms  DeleteObjects: 0.261300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -231,20 +217,76 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 11528.169228 seconds.
-  path: Packages/com.unity.xr.legacyinputhelpers/Tests/Editor/LegacyInputHelpersEditorTests.asmdef
-  artifactKey: Guid(559bcbd55c770ea4d959cfdb857c39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.xr.legacyinputhelpers/Tests/Editor/LegacyInputHelpersEditorTests.asmdef using Guid(559bcbd55c770ea4d959cfdb857c39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782976577ac40abf67f67b5a7f2d7346') in 0.023527 seconds
+  Time since last request: 23186.391240 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-PVC_-_Gris_foncé.mat
+  artifactKey: Guid(c44c66b524c150c4fb7d56a05c9eedd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-PVC_-_Gris_foncé.mat using Guid(c44c66b524c150c4fb7d56a05c9eedd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2e9657bc336754d4f9e016d6fd9a611') in 0.136221 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Packages/com.unity.xr.legacyinputhelpers/Runtime/LegacyInputHelpers.asmdef
-  artifactKey: Guid(28c5e819ece8a0746abb16dc5aa91f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.xr.legacyinputhelpers/Runtime/LegacyInputHelpers.asmdef using Guid(28c5e819ece8a0746abb16dc5aa91f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b025b96d634c0545eab47d12daff426') in 0.002748 seconds
+  Time since last request: 0.000047 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Bardage_Metallique.mat
+  artifactKey: Guid(5279a0ea647ace348bd1469385e30da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Bardage_Metallique.mat using Guid(5279a0ea647ace348bd1469385e30da4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c32c5644d5b93e74777ed6796b83f28') in 0.023375 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-PVC_-_Blanc.mat
+  artifactKey: Guid(32a0df9226eeadd4ab92026613540828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-PVC_-_Blanc.mat using Guid(32a0df9226eeadd4ab92026613540828) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4e5dded86dfb06778e572b96ead363c') in 0.021041 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Acier.mat
+  artifactKey: Guid(bd72c3741a29ee146b72bd1018b16fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Acier.mat using Guid(bd72c3741a29ee146b72bd1018b16fe2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd26ab16d48255899b3aefa58986209f') in 0.018430 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-Placard_-_Porte.mat
+  artifactKey: Guid(e75f6dab7ef964b4fbcde2d9e3a47c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-Placard_-_Porte.mat using Guid(e75f6dab7ef964b4fbcde2d9e3a47c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79de1c53e5d93dff5cdba94a70ee9e7c') in 0.017589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.085980 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Caoutchouc.mat
+  artifactKey: Guid(c1ee5caac8f235642999e966a424a284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Caoutchouc.mat using Guid(c1ee5caac8f235642999e966a424a284) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1010416f0d8d23b4012bc83c24a317f') in 0.014417 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.851365 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Metal_Laque.mat
+  artifactKey: Guid(c7ff1e15e07890d4cbb4948cded385d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Metal_Laque.mat using Guid(c7ff1e15e07890d4cbb4948cded385d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69bed19ba6f36478232b7d676c5b694f') in 0.012734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1.098877 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Placopan_Hydrofuge.mat
+  artifactKey: Guid(60c051f4cc219e04a962e53a4c5069e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Placopan_Hydrofuge.mat using Guid(60c051f4cc219e04a962e53a4c5069e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e53b4d9aac075654f3833c58be9b268') in 0.016618 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.191530 seconds.
+  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Sol_Souple_Pièce_Sèche_Humide.mat
+  artifactKey: Guid(259aee18e1d901b4dbe900be88876919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Sol_Souple_Pièce_Sèche_Humide.mat using Guid(259aee18e1d901b4dbe900be88876919) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0ef9c89da5f930ccd63254b915cccd8') in 0.015341 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server

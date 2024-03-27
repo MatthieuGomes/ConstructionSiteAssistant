@@ -1,6 +1,7 @@
 /*
  * Author: Oliver Belliard Abreu
- * Project: ENSEA 2d year project "Construction Site Assistant"
+ * Project: ENSEA 2d year project "Construction Site Assistant".
+ * Description: Main script, manages or triggers the setup of all game objects of the scene.
  */
 
 using System.Collections;
@@ -8,6 +9,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Oculus.Interaction.Surfaces;
 using Oculus.Interaction;
+using Unity.VisualScripting;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,14 +24,8 @@ public class GameManager : MonoBehaviour
         // Set up of all 
         foreach (GameObject parentObject in interactiveObjects)
         {
-            // We turn the Game Object ray interactable
-            MakeRayInteractable(parentObject);
-            
-            // We make all children interactable
-            if (makeChildrenInteractive)
-            {
-                RecursiveChildrenStartMethod(parentObject);
-            }
+            // We make the object and its children interactable
+            RecursiveChildrenStartMethod(parentObject);
         }
     }
 
@@ -42,12 +38,15 @@ public class GameManager : MonoBehaviour
     // Recursive call to set up all selected child GameObjects at Startup
     private void RecursiveChildrenStartMethod(GameObject obj)
     {
+        // Operations to execute on children
+        // We attach a CSA Component data model to the current object
+        obj.AddComponent<CSAComponent>();
+        // We turn the current object ray interactable
+        MakeRayInteractable(obj);
+
         // We retrieve all childen in current child
         foreach (GameObject child in GetAllChildren(obj))
         {
-            // Operations to execute on children
-            MakeRayInteractable(child);
-
             // Recursive call for each child of child
             RecursiveChildrenStartMethod(child);
         }

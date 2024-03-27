@@ -9,13 +9,13 @@ C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Unity.exe
 -batchMode
 -noUpm
 -name
-AssetImportWorker5
+AssetImportWorker1
 -projectPath
 C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
 -logFile
-Logs/AssetImportWorker5.log
+Logs/AssetImportWorker1.log
 -srvPort
-54350
+51365
 Successfully changed project path to: C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
 C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,13 +49,13 @@ C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [28268] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 3778069530 [EditorId] 3778069530 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [31624] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 2402199270 [EditorId] 2402199270 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [28268] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 3778069530 [EditorId] 3778069530 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [31624] Host "[IP] 192.168.1.26 [Port] 0 [Flags] 2 [Guid] 2402199270 [EditorId] 2402199270 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-NKFEF679) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 15 workers.
-Refreshing native plugins compatible for Editor in 24.88 ms, found 7 plugins.
-Preloading 1 native plugins for Editor in 1.20 ms.
+Refreshing native plugins compatible for Editor in 323.20 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 4.75 ms.
 Initialize engine version: 2022.3.18f1 (d29bea25151d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/olire/ConstructionSiteAssistant/02_src/ConstructionSiteAssistant/Assets
@@ -72,47 +72,61 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56056
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.017428 seconds.
-- Loaded All Assemblies, in  0.633 seconds
+Registered in 0.010977 seconds.
+- Loaded All Assemblies, in  0.539 seconds
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 447 ms
+Multiple ADB server instances found, the following ADB server instance have been terminated due to being run from another SDK. Process paths: 
+C:\Users\olire\AppData\Roaming\SideQuest\scrcpy-win64-v2.0\adb.exe
+Reconnecting Device: 
+2G0YC1ZF9Q0349        
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+UnityEditor.Android.AndroidDeploymentTargetsExtension:GetKnownTargets (UnityEditor.DeploymentTargets.IDeploymentTargetsMainThreadContext,UnityEditor.ProgressHandler)
+UnityEditor.Android.TargetScanWorker:ScanSync ()
+UnityEditor.Android.TargetExtension:OnUsbDevicesChanged (UnityEditor.Hardware.UsbDevice[])
+UnityEditor.Android.TargetExtension:OnLoad ()
+UnityEditor.Modules.ModuleManager:InitializePlatformSupportModules ()
+
+Android Extension - Scanning For ADB Devices 3312 ms
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.998 seconds
-Domain Reload Profiling: 1628ms
-	BeginReloadAssembly (204ms)
+- Finished resetting the current domain, in  3.696 seconds
+Domain Reload Profiling: 4232ms
+	BeginReloadAssembly (210ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (51ms)
-	RebuildNativeTypeToScriptingClass (20ms)
-	initialDomainReloadingComplete (124ms)
-	LoadAllAssembliesAndSetupDomain (230ms)
-		LoadAssemblies (200ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (84ms)
+	LoadAllAssembliesAndSetupDomain (179ms)
+		LoadAssemblies (201ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (227ms)
-			TypeCache.Refresh (225ms)
-				TypeCache.ScanAssembly (206ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
+		AnalyzeDomain (176ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (157ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (999ms)
+	FinalizeReload (3696ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (910ms)
+		SetupLoadedEditorAssemblies (3631ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (649ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (3453ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (186ms)
-			ProcessInitializeOnLoadMethodAttributes (67ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -121,8 +135,8 @@ Domain Reload Profiling: 1628ms
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.953 seconds
-Refreshing native plugins compatible for Editor in 9.87 ms, found 7 plugins.
+- Loaded All Assemblies, in  3.439 seconds
+Refreshing native plugins compatible for Editor in 16.25 ms, found 7 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for Android target not found
 Package Manager log level set to [2]
@@ -157,49 +171,49 @@ Mono: successfully reloaded assembly
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
-- Finished resetting the current domain, in  0.939 seconds
-Domain Reload Profiling: 1887ms
-	BeginReloadAssembly (226ms)
+- Finished resetting the current domain, in  1.690 seconds
+Domain Reload Profiling: 5122ms
+	BeginReloadAssembly (249ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (34ms)
-	RebuildCommonClasses (50ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (68ms)
-	LoadAllAssembliesAndSetupDomain (581ms)
-		LoadAssemblies (426ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (61ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (3032ms)
+		LoadAssemblies (2688ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (276ms)
-			TypeCache.Refresh (238ms)
-				TypeCache.ScanAssembly (212ms)
-			ScanForSourceGeneratedMonoScriptInfo (25ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (939ms)
+		AnalyzeDomain (502ms)
+			TypeCache.Refresh (444ms)
+				TypeCache.ScanAssembly (352ms)
+			ScanForSourceGeneratedMonoScriptInfo (36ms)
+			ResolveRequiredComponents (19ms)
+	FinalizeReload (1690ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (717ms)
+		SetupLoadedEditorAssemblies (1309ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (49ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (83ms)
-			ProcessInitializeOnLoadAttributes (555ms)
-			ProcessInitializeOnLoadMethodAttributes (33ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (147ms)
+			ProcessInitializeOnLoadAttributes (1043ms)
+			ProcessInitializeOnLoadMethodAttributes (52ms)
+			AfterProcessingInitializeOnLoad (10ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
 Shader 'Scene/HighlightsAndShadows': fallback shader 'Off' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 18.13 ms, found 7 plugins.
-Preloading 1 native plugins for Editor in 0.14 ms.
-Unloading 4171 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 51 unused Assets / (63.1 KB). Loaded Objects now: 4630.
-Memory consumption went from 169.3 MB to 169.2 MB.
-Total: 4.030200 ms (FindLiveObjects: 0.317700 ms CreateObjectMapping: 0.142000 ms MarkObjects: 3.442900 ms  DeleteObjects: 0.126400 ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.18 seconds
+Refreshing native plugins compatible for Editor in 47.26 ms, found 7 plugins.
+Preloading 1 native plugins for Editor in 1.11 ms.
+Unloading 4170 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 51 unused Assets / (63.2 KB). Loaded Objects now: 4628.
+Memory consumption went from 169.2 MB to 169.1 MB.
+Total: 8.463300 ms (FindLiveObjects: 0.428600 ms CreateObjectMapping: 0.202600 ms MarkObjects: 7.608700 ms  DeleteObjects: 0.221400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -217,12 +231,20 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 23198.690173 seconds.
-  path: Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Plaque_Platre_Hydro.mat
-  artifactKey: Guid(c62597fff23df4f41b83d8c07b46dbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Materials/ETIENNE_RYCKEWAERT-VCF_Plaque_Platre_Hydro.mat using Guid(c62597fff23df4f41b83d8c07b46dbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96379613d680faa3668ded1100ced0d9') in 0.102400 seconds
+  Time since last request: 11528.169228 seconds.
+  path: Packages/com.unity.xr.legacyinputhelpers/Tests/Editor/LegacyInputHelpersEditorTests.asmdef
+  artifactKey: Guid(559bcbd55c770ea4d959cfdb857c39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.legacyinputhelpers/Tests/Editor/LegacyInputHelpersEditorTests.asmdef using Guid(559bcbd55c770ea4d959cfdb857c39a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '782976577ac40abf67f67b5a7f2d7346') in 0.023527 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 1
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Packages/com.unity.xr.legacyinputhelpers/Runtime/LegacyInputHelpers.asmdef
+  artifactKey: Guid(28c5e819ece8a0746abb16dc5aa91f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.xr.legacyinputhelpers/Runtime/LegacyInputHelpers.asmdef using Guid(28c5e819ece8a0746abb16dc5aa91f44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b025b96d634c0545eab47d12daff426') in 0.002748 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: The I/O operation has been aborted because of either a thread exit or an application request.
 AssetImportWorker is now disconnected from the server
