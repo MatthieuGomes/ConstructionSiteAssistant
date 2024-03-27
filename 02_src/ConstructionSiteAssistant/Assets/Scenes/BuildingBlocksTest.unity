@@ -16154,7 +16154,19 @@ MonoBehaviour:
         m_CallState: 2
   _whenUnhover:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 902627547}
+        m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   _whenSelect:
     m_PersistentCalls:
       m_Calls: []
@@ -31157,6 +31169,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1856577772}
   - component: {fileID: 1856577771}
+  - component: {fileID: 1856577773}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -31178,7 +31191,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactiveObjects:
   - {fileID: 1512435839}
-  makeChildrenInteractive: 1
+  materials: []
+  onHoverMaterial: {fileID: 0}
 --- !u!4 &1856577772
 Transform:
   m_ObjectHideFlags: 0
@@ -31194,6 +31208,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1856577773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1856577770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35d5c1ddcb6f40a419493af466928732, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  elementType: 
+  elementMaterial: 
+  elementId: 0
+  defaultElementName: 
+  defaultMaterial: {fileID: 0}
 --- !u!1 &1862303186
 GameObject:
   m_ObjectHideFlags: 0

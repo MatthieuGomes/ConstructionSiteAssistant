@@ -1,6 +1,6 @@
 /*
  * Author: Oliver Belliard Abreu
- * Project: ENSEA 2d year project "Construction Site Assistant".
+ * Project: ENSEA 2d year project "Construction Site Assistant" (CSA).
  * Description: Main script, manages or triggers the setup of all game objects of the scene.
  */
 
@@ -16,7 +16,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     public GameObject[] interactiveObjects;
     [SerializeField]
-    public bool makeChildrenInteractive = true;
+    public Material[] materials;
+    [SerializeField]
+    public Material onHoverMaterial;
 
     // Start is called before the first frame update
     void Start()
@@ -39,8 +41,9 @@ public class GameManager : MonoBehaviour
     private void RecursiveChildrenStartMethod(GameObject obj)
     {
         // Operations to execute on children
-        // We attach a CSA Component data model to the current object
-        obj.AddComponent<CSAComponent>();
+        if (obj.GetComponent<MeshRenderer>() != null)
+            // We attach a CSA Component data model to the current object
+            obj.AddComponent<CSAComponent>();
         // We turn the current object ray interactable
         MakeRayInteractable(obj);
 
@@ -64,11 +67,24 @@ public class GameManager : MonoBehaviour
             MeshCollider meshCollider = obj.AddComponent<MeshCollider>();
             ColliderSurface colliderSurface = obj.AddComponent<ColliderSurface>();
             RayInteractable rayInteractable = obj.AddComponent<RayInteractable>();
+            InteractableUnityEventWrapper interactableUnityEventWrapper = obj.AddComponent<InteractableUnityEventWrapper>();
 
             // We set up the added components
             meshCollider.sharedMesh = meshToCollide;
             colliderSurface.InjectCollider(meshCollider);
             rayInteractable.InjectSurface(colliderSurface);
+            // We enable the Event Wrapper
+            interactableUnityEventWrapper.InjectInteractableView(rayInteractable);
+            interactableUnityEventWrapper.enabled = true;
+
+            // We set up the Event Wrapper to change the object material on Hover
+            interactableUnityEventWrapper.WhenHover.AddListener(
+                () => obj.GetComponent<CSAComponent>().SwitchToHoverMaterial(onHoverMaterial));
+            interactableUnityEventWrapper.WhenUnhover.AddListener(
+                () => obj.GetComponent<CSAComponent>().SwitchBackToDefaultMaterial());
+            // We change the material to a random one if the object is selected
+            interactableUnityEventWrapper.WhenSelect.AddListener(
+                () => obj.GetComponent<CSAComponent>().SetRandomMaterial(materials));
         }
     }
 

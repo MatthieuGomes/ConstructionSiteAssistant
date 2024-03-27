@@ -1,5 +1,12 @@
+/*
+ * Author: Saïd Sahnoune & Oliver Belliard Abreu
+ * Project: ENSEA 2d year project "Construction Site Assistant" (CSA).
+ * Description: Sets the data of curent Game Object to fit the specifications of the CSA.
+ */
+
 using System.Collections;
 using System.Collections.Generic;
+using System.Xml.Linq;
 using UnityEditor;
 using UnityEngine;
 
@@ -7,20 +14,20 @@ public class CSAComponent : MonoBehaviour
 {
     [SerializeField]
     public string elementType;
-
     [SerializeField]
     public string elementMaterial;
-
     [SerializeField]
     public int elementId;
-
     [SerializeField]
     public string defaultElementName;
+    [SerializeField]
+    public Material defaultMaterial;
 
     // Start is called before the first frame update
     void Start()
     {
         ParseName(this.gameObject);
+        defaultMaterial = GetComponent<MeshRenderer>().material;
     }
 
     // Update is called once per frame
@@ -69,5 +76,29 @@ public class CSAComponent : MonoBehaviour
         // Notifies the Unity editor that the object has been modified
         EditorUtility.SetDirty(obj);
 #endif
+    }
+
+    //
+    // EVENT FUNCTIONS
+    //
+    // Changes the material on hover
+    public void SwitchToHoverMaterial(Material material)
+    {
+        if (material != defaultMaterial)
+        {
+            GetComponent<MeshRenderer>().material = material;
+        }
+    }
+
+    // Switches the material back to the original material when there's no interaction
+    public void SwitchBackToDefaultMaterial()
+    {
+        GetComponent<MeshRenderer>().material = defaultMaterial;
+    }
+
+    // Changes the mesh material to a random material from a given list
+    public void SetRandomMaterial(Material[] materials)
+    {
+        GetComponent<MeshRenderer>().material = materials[Random.Range(0, materials.Length)];
     }
 }
