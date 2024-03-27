@@ -67,16 +67,18 @@ public class GameManager : MonoBehaviour
             MeshCollider meshCollider = obj.AddComponent<MeshCollider>();
             ColliderSurface colliderSurface = obj.AddComponent<ColliderSurface>();
             RayInteractable rayInteractable = obj.AddComponent<RayInteractable>();
-            InteractableUnityEventWrapper interactableUnityEventWrapper = obj.AddComponent<InteractableUnityEventWrapper>();
 
             // We set up the added components
             meshCollider.sharedMesh = meshToCollide;
             colliderSurface.InjectCollider(meshCollider);
             rayInteractable.InjectSurface(colliderSurface);
+
+            /* TODO: set up events on CSA Components *
             // We enable the Event Wrapper
+            InteractableUnityEventWrapper interactableUnityEventWrapper = obj.AddComponent<InteractableUnityEventWrapper>();
             interactableUnityEventWrapper.InjectInteractableView(rayInteractable);
             interactableUnityEventWrapper.enabled = true;
-
+            
             // We set up the Event Wrapper to change the object material on Hover
             interactableUnityEventWrapper.WhenHover.AddListener(
                 () => obj.GetComponent<CSAComponent>().SwitchToHoverMaterial(onHoverMaterial));
@@ -85,6 +87,7 @@ public class GameManager : MonoBehaviour
             // We change the material to a random one if the object is selected
             interactableUnityEventWrapper.WhenSelect.AddListener(
                 () => obj.GetComponent<CSAComponent>().SetRandomMaterial(materials));
+            */
         }
     }
 
