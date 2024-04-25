@@ -2,6 +2,7 @@
 
 ## Useful links
 - Trello: https://trello.com/w/projetassistantchantier2a/members
+- Notion: https://oliver-benjamin.notion.site/adea81ec6a7540518e80d6fe5fd57195?v=632ea0d2a33b4f16ba4129930be465de&pvs=4
 - Techniques de l'Ingénieur: https://www.techniques-ingenieur.fr  
 
 ## Version unity utilisée
